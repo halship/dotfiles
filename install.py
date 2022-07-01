@@ -8,11 +8,7 @@ TARGET_FILES = [
         '.xprofile',
         '.config/alacritty/alacritty.yml',
         '.config/dunst/dunstrc',
-        '.config/i3/config',
         '.config/nvim/init.vim',
-        '.config/picom/picom.conf',
-        '.config/rofi/config.rasi',
-        '.config/rofi/tokyo-night.rasi',
 ]
 
 if __name__ == '__main__':
