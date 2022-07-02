@@ -3,6 +3,7 @@ import os.path
 
 # Target files
 TARGET_FILES = [
+        '.bashrc',
         '.config/alacritty/alacritty.yml',
         '.config/dunst/dunstrc',
         '.config/nvim/init.vim',
@@ -23,7 +24,8 @@ if __name__ == '__main__':
             print('Install {}'.format(file))
 
             # If target directory is not exists, create directory
-            os.makedirs(os.path.dirname(file), exist_ok=True)
+            if os.path.dirname(dst_path) != '':
+                os.makedirs(os.path.dirname(dst_path), exist_ok=True)
 
             # Create symbolic link
             os.symlink(src_path, dst_path)
