@@ -3,9 +3,6 @@ import os.path
 
 # Target files
 TARGET_FILES = [
-        '.bashrc',
-        '.bash_profile',
-        '.xprofile',
         '.config/alacritty/alacritty.yml',
         '.config/dunst/dunstrc',
         '.config/nvim/init.vim',

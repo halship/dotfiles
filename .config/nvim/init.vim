@@ -11,14 +11,13 @@ syntax on
 " Plugin settings
 call plug#begin()
 
-Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+Plug 'morhetz/gruvbox'
 Plug 'itchyny/lightline.vim'
 
 call plug#end()
 
 " Plugin settings
-let g:tokyonight_style = "night"
-let g:lightline = {'colorscheme': 'tokyonight'}
+let g:lightline = {'colorscheme': 'gruvbox'}
 
 " Colorscheme settings
-colorscheme tokyonight
+colorscheme gruvbox
